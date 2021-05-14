@@ -435,7 +435,11 @@ a.accordion-expand:after {
 .wrapper {
   max-width: 1240px;
   margin: 0px auto;
-  padding: 0px 20px;
+  padding: 0px var(--gutter);
+}
+
+.wrapper.wrapper--no-gutter {
+  padding: 0px 0px;
 }
 
 .header {
