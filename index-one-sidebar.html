@@ -9,6 +9,12 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --base-font: 20px;
+      --gutter: 40px;
+    }
+  </style>
 </head>
 <body>
   <header class="header overlay-wrapper" style="background-image: url(img/housing.jpg)">
@@ -34,43 +40,43 @@
       </ol>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="row mobile-reverse">
-      <main class="col-sm-8 col-md-9">
-        <div class="row">
-          <section class="page-content col-md-8">
-            <h1 class="page-title">Ask for a repair to your council home</h1>
-            <div class="page-subtitle">Ask us to repair your council home if it’s been damaged.</div>
-            <p>Before you ask us for a repair, make sure who’s responsible as there are some repairs you’ll need to carry out yourself.</p>
-            <p>You can request a repair online or, if your council home needs an emergency repair, call us on 0800 052 6140.</p>
-            <p>If the repair is for a suspected gas leak, please call the National Grid on 0800 111 999.</p>
-            <p>Repairs, maintenance and improvement services for council housing are now run directly by the council. Download our quick guide to the new repairs and maintenance service.</p>
-            <h2>How long does a repair take?</h2>
-            <p>When you ask us for a repair, the time it takes for us to start the work depends on the type of repair.</p>
-            <p>We’ll decide if your repair is:</p>
-            <ul>
-              <li>emergency, which we’ll start within 24 hours</li>
-              <li>routine, which we’ll start within 20 workings days</li>
-              <li>complex, which will take longer than 20 days to complete</li>
-            </ul>
-            <p>You can read more about types of repairs in our housing repairs handbook.</p>
-          </section>
-          <section class="sidebar col-md-4">
-            <h2>Services</h2>
-            <ul class="unstyled-list">
-              <li><a class="btn btn-success btn-next" href="#">Request a repair</a></li>
-              <li><a class="btn btn-success btn-next" href="#">Request an update to an existing repair</a></li>
-              <li><a class="btn btn-success btn-next" href="#">Give us feedback on a repair</a></li>
-            </ul>
-            <h2>More information</h2>
-            <ul class="unstyled-list sidebar-links">
-              <li><a href="#">Repairs, maintenance and improvement services from April 2020</a></li>
-              <li><a href="#">Your new repairs, maintenance and improvement service</a></li>
-            </ul>
-          </section>
-        </div>
-      </main>
-      <div class="aside col-sm-4 col-md-3">
+  <div class="wrapper wrapper--no-gutter">
+    <main>
+      <div class="row">
+        <section class="page-content col-md-8">
+          <h1 class="page-title">Ask for a repair to your council home</h1>
+          <div class="page-subtitle">Ask us to repair your council home if it’s been damaged.</div>
+          <p>Before you ask us for a repair, make sure who’s responsible as there are some repairs you’ll need to carry out yourself.</p>
+          <p>You can request a repair online or, if your council home needs an emergency repair, call us on 0800 052 6140.</p>
+          <p>If the repair is for a suspected gas leak, please call the National Grid on 0800 111 999.</p>
+          <p>Repairs, maintenance and improvement services for council housing are now run directly by the council. Download our quick guide to the new repairs and maintenance service.</p>
+          <h2>How long does a repair take?</h2>
+          <p>When you ask us for a repair, the time it takes for us to start the work depends on the type of repair.</p>
+          <p>We’ll decide if your repair is:</p>
+          <ul>
+            <li>emergency, which we’ll start within 24 hours</li>
+            <li>routine, which we’ll start within 20 workings days</li>
+            <li>complex, which will take longer than 20 days to complete</li>
+          </ul>
+          <p>You can read more about types of repairs in our housing repairs handbook.</p>
+        </section>
+        <section class="sidebar col-md-4">
+          <h2>Services</h2>
+          <ul class="unstyled-list">
+            <li><a class="btn btn-success btn-next" href="#">Request a repair</a></li>
+            <li><a class="btn btn-success btn-next" href="#">Request an update to an existing repair</a></li>
+            <li><a class="btn btn-success btn-next" href="#">Give us feedback on a repair</a></li>
+          </ul>
+          <h2>More information</h2>
+          <ul class="unstyled-list sidebar-links">
+            <li><a href="#">Repairs, maintenance and improvement services from April 2020</a></li>
+            <li><a href="#">Your new repairs, maintenance and improvement service</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <div class="row">
+      <div class="aside col-sm-12">
         <nav class="service-navigation box">
           <h2><a href="#">Home</a></h2>
           <hr/>
@@ -157,7 +163,6 @@
         </nav>
       </div>
     </div>
-  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>

@@ -95,6 +95,8 @@
   --clr-neutral-0: hsl(180, 0%, 0%);
   --clr-link: hsl(216, 93%, 52%);
   --clr-success: hsl(129, 78%, 30%);
+  --base-font: 16px;
+  --gutter: 20px;
 }
 
 /* Base */
@@ -105,15 +107,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--base-font);
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: var(--clr-neutral-98);
   color: var(--clr-neutral-25);
-  font-size: 16px;
+  font-size: var(--base-font);
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 600;
   line-height: 1;
   margin: 30px 0;
@@ -121,7 +127,7 @@ h1 {
 
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1;
   margin: 30px 0;
@@ -145,27 +151,36 @@ a {
 
 [class*="col-"] {
   width: 100%;
-  padding: 0px 20px; 
+  padding: 0px 20px;
 }
 
 .row {
   display: flex;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: calc(0 - var(--gutter));
+  margin-right: calc(0 - var(--gutter));
   flex-wrap: wrap;
 }
 
 .row::after {
   content: " ";
-  display: block; 
-  height: 0; 
+  display: block;
+  height: 0;
   clear: both;
 }
 
 @media only screen and (min-width: 768px) {
   [class*="col-"] {
-    float: left;
-    padding: 20px 20px; 
+    /* float: left; */
+    padding: var(--gutter) var(--gutter);
+  }
+
+  /* Remove any excess margins from first and last child so the line to container edges */
+  [class*="col-"] > :first-child {
+    margin-top: 0;
+  }
+
+  [class*="col-"] > :last-child {
+    margin-bottom: 0;
   }
 
   .col-sm-1 { max-width: 8.33%; flex: 0 0 8.33%; }
@@ -179,10 +194,9 @@ a {
   .col-sm-9 { max-width: 75%; flex: 0 0 75%; }
   .col-sm-10 { max-width: 83.33%; flex: 0 0 83.33%; }
   .col-sm-11 { max-width: 91.66%; flex: 0 0 91.66%; }
-  .col-sm-12 { max-width: 100%; flex: 0 0 100%; } 
+  .col-sm-12 { max-width: 100%; flex: 0 0 100%; }
 
   .mobile-reverse {
-    float: right;
     flex-direction: row-reverse;
   }
 }
@@ -190,10 +204,6 @@ a {
 
 
 @media only screen and (min-width: 1024px) {
-  [class*="col-"] {
-    float: left;
-    padding: 20px 20px; 
-  }
 
   .col-md-1 { max-width: 8.33%; flex: 0 0 8.33%; }
   .col-md-2 { max-width: 16.66%; flex: 0 0 16.66%; }
@@ -206,7 +216,7 @@ a {
   .col-md-9 { max-width: 75%; flex: 0 0 75%; }
   .col-md-10 { max-width: 83.33%; flex: 0 0 83.33%; }
   .col-md-11 { max-width: 91.66%; flex: 0 0 91.66%; }
-  .col-md-12 { max-width: 100%; flex: 0 0 100%; } 
+  .col-md-12 { max-width: 100%; flex: 0 0 100%; }
 
   .mobile-reverse {
     float: right;
@@ -233,7 +243,7 @@ a {
   padding: 15px 50px 15px 20px; ;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   font-weight: 600;
   color: var(--clr-neutral-100);
@@ -282,7 +292,7 @@ a {
   padding-right: 20px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 18px;
 }
 
@@ -343,17 +353,17 @@ a {
 }
 
 .service-navigation h2 {
-  font-size: 16px;
+  font-size: 1rem;;
   line-height: 1;
 }
 
 .service-navigation h3 {
-  font-size: 16px;
+  font-size: 1rem;;
   line-height: 1;
 }
 
 .service-navigation h4 {
-  font-size: 14px;
+  font-size: 0.875rem;;
   line-height: 1;
 }
 
@@ -425,7 +435,11 @@ a.accordion-expand:after {
 .wrapper {
   max-width: 1240px;
   margin: 0px auto;
-  padding: 0px 20px;
+  padding: 0px var(--gutter);
+}
+
+.wrapper.wrapper--no-gutter {
+  padding: 0px 0px;
 }
 
 .header {
@@ -445,7 +459,7 @@ a.accordion-expand:after {
   margin-bottom: 20px;
   padding-bottom: 20px;
   font-family: "Sentinel", serif;
-  font-size: 30px;
+  font-size: 1.875rem;;
   line-height: 1;
   letter-spacing: .01em;
   font-weight: 700;
@@ -463,15 +477,15 @@ a.accordion-expand:after {
 
 .header-subtitle {
   max-width: 420px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.125rem;;
+  line-height: 1.4;
 }
 
 .breadcrumb {
   background-color: var(--clr-neutral-94);
   color: var(--clr-neutral-5);
   padding: 10px 0px;
-  font-size: 14px;
+  font-size: 0.875rem;;
 }
 
 .breadcrumbs {
@@ -518,7 +532,7 @@ a.accordion-expand:after {
 
   .breadcrumbs li:nth-last-child(2) {
     display: inline;
-  } 
+  }
 }
 
 .page-content {
@@ -548,12 +562,12 @@ a.accordion-expand:after {
 }
 
 .page-subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;;
   line-height: 20px;
   margin-bottom: 30px;
 }
 
 .sidebar h2 {
-  font-size: 20px;
+  font-size: 1.25rem;;
   color: var(--clr-neutral-34);
 }
