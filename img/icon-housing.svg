@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon-housing" transform="translate(-56 -633)">
+    <g id="school" transform="translate(56.982 631.174)">
+      <path id="Path_1045" data-name="Path 1045" d="M28,51.2V47h2.4v4.2H25.217V42.153l3.929-3.127,3.986,3.127v1.315" transform="translate(-23.2 -32.2)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+      <rect id="Rectangle_1003" data-name="Rectangle 1003" width="2.4" height="1.6" transform="translate(4.8 11)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_1047" data-name="Path 1047" d="M30.4,52.2V48H28v4.2" transform="translate(-18 -33.2)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+      <rect id="Rectangle_1004" data-name="Rectangle 1004" width="2" height="2" transform="translate(15.601 14.8)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_1046" data-name="Path 1046" d="M20,24l-6.5-3L7,24v7.2H20Z" transform="translate(0.301 -11.2)" fill="rgba(255,255,255,0)" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <rect id="icon-housing-2" data-name="icon-housing" width="24" height="24" transform="translate(56 633)" fill="none"/>
+  </g>
+</svg>

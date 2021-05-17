@@ -12,4 +12,19 @@ $(document).ready(function (){
         accordionWrapper.addClass("accordion-active");
       }
     })
+
+    $(".dropdown-header a").click(function(e){
+      e.preventDefault();
+      href = $(this).attr("href");
+      var dropDownbody = $(href);
+      var dropDownwrapper = $(this).parent();
+      if(dropDownwrapper.hasClass("dropdown-active")) {
+        dropDownbody.slideUp(400);
+        dropDownwrapper.removeClass("dropdown-active");
+      } else {
+        dropDownbody.slideDown(400);
+        dropDownwrapper.addClass("dropdown-active");
+      }
+    })
+
 });
