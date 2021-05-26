@@ -27,4 +27,23 @@ $(document).ready(function (){
       }
     })
 
+    $(".header-navigation-menu-parent").click(function(e){
+      e.preventDefault();
+      href = $(this).attr("href");
+      var menuBody = $(href);
+      wrapper = $(this).parent().parent();
+      if($(this).hasClass("menu-active")) {
+        menuBody.slideUp(500);
+        $(this).removeClass("menu-active");
+      } else {
+        var active = wrapper.find(".menu-active");
+        activeHref = active.attr("href");
+        console.log(active);
+        $(activeHref).slideUp(500);
+        active.removeClass("menu-active");
+        menuBody.slideDown(500);
+        $(this).addClass("menu-active");
+      }
+    });
+
 });

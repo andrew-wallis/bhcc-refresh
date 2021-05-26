@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13.273" viewBox="0 0 16 13.273">
+  <g id="letter" transform="translate(0.5 0.5)">
+    <path id="Path_1092" data-name="Path 1092" d="M15.5.5v9c0,.552-.611,1-1.364,1H1.864C1.111,10.5.5,10.052.5,9.5V.5" transform="translate(-0.5 1.773)" fill="none" stroke="#373c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_1093" data-name="Path 1093" d="M15.5,4.409V2.955A1.411,1.411,0,0,0,14.136,1.5H1.864A1.411,1.411,0,0,0,.5,2.955V4.409L8,8.773Z" transform="translate(-0.5 -1.5)" fill="none" stroke="#373c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
